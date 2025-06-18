@@ -1,5 +1,8 @@
 ---
-import Layout from '../layouts/default.astro'
+import '../styles/global.css'
+
+import Footer from '../components/footer.astro'
+import Header from '../components/header.astro'
 ---
 
 <html lang="ja">
@@ -10,8 +13,8 @@ import Layout from '../layouts/default.astro'
 		<title>Astro</title>
 	</head>
 	<body>
-		<Layout>
-			<h1>Hello World!</h1>
-		</Layout>
+        <Header />
+		<slot />
+        <Footer />
 	</body>
 </html>
